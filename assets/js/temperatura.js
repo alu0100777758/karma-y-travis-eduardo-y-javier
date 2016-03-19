@@ -25,7 +25,7 @@
         },
 
         toKelvin: function(value) {
-          return this.valor + 273.15;
+          return ((this.valor) + 273.15);
         }
     };
 
