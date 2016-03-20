@@ -14,3 +14,4 @@ Este repositorio aloja la práctica de conversión de tipos, realizada con html,
 **Página del autor**
 
 * [Web Author](eduardobritosan.github.io)
+* [Web Author](alu0100777758.github.io)
