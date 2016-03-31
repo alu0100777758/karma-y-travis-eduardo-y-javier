@@ -1,3 +1,4 @@
+require('XRegExp');
 (function(exports) {
     "use strict";
 

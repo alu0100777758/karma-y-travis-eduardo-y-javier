@@ -1,5 +1,5 @@
 // Karma configuration
-// Generated on Thu Mar 17 2016 23:29:13 GMT+0000 (WET)
+// Generated on Thu Mar 31 2016 15:04:33 GMT-0700 (PDT)
 
 module.exports = function(config) {
   config.set({
@@ -10,22 +10,24 @@ module.exports = function(config) {
 
     // frameworks to use
     // available frameworks: https://npmjs.org/browse/keyword/karma-adapter
-    frameworks: ['mocha', 'chai'],
+    frameworks: ['mocha', 'requirejs'],
 
 
     // list of files / patterns to load in the browser
     files: [
-      'assets/js/xrexexp-all.js',
-      'assets/js/*.js',
-      'vendor/chai.js',
-      'vendor/mocha.css',
-      'vendor/mocha.js'
+
+        'assets/js/xrexexp-all.js',
+        'assets/js/*.js',
+        'vendor/chai.js',
+        'vendor/mocha.css',
+        'vendor/mocha.js',
+
+        'test-main.js'
     ],
 
 
     // list of files to exclude
     exclude: [
-      'gulpfile.js'
     ],
 
 
@@ -51,7 +53,7 @@ module.exports = function(config) {
 
     // level of logging
     // possible values: config.LOG_DISABLE || config.LOG_ERROR || config.LOG_WARN || config.LOG_INFO || config.LOG_DEBUG
-    logLevel: config.LOG_ERROR,
+    logLevel: config.LOG_INFO,
 
 
     // enable / disable watching file and executing tests whenever any file changes
@@ -60,7 +62,7 @@ module.exports = function(config) {
 
     // start these browsers
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
-    browsers: ['PhantomJS'],
+    browsers: ['Chrome', 'Firefox', 'PhantomJS'],
 
 
     // Continuous Integration mode
