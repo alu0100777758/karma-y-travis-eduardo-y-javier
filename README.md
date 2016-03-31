@@ -16,4 +16,4 @@ Este repositorio aloja la práctica de conversión de tipos, realizada con html,
 * [Web Author](eduardobritosan.github.io)
 * [Web Author](alu0100777758.github.io)
 **Build status**
-[![BuildStatus](https://travis-ci.org/alu0100777758/karma-y-travis-eduardo-y-javier.svg?branch=master)
+[!BuildStatus](https://travis-ci.org/alu0100777758/karma-y-travis-eduardo-y-javier.svg?branch=master)
