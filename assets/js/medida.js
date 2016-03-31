@@ -1,5 +1,5 @@
-require('XRegExp');
-(function(exports) {
+var moduleName = 'xregexp';
+require([moduleName], function(exports) {
     "use strict";
 
     function Medida(valor,tipo) {
@@ -66,6 +66,5 @@ require('XRegExp');
         else
             return "Introduzca una temperatura valida: 330e-1 F to C";
     };
-
-    exports.Medida = Medida;
-})(this);
+  exports.Medida = Medida;
+});

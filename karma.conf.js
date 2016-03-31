@@ -1,5 +1,5 @@
 // Karma configuration
-// Generated on Thu Mar 31 2016 15:04:33 GMT-0700 (PDT)
+// Generated on Thu Mar 31 2016 16:08:46 GMT-0700 (PDT)
 
 module.exports = function(config) {
   config.set({
@@ -15,25 +15,21 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-
-        'assets/js/xrexexp-all.js',
-        'assets/js/*.js',
-        'vendor/chai.js',
-        'vendor/mocha.css',
-        'vendor/mocha.js',
-
-        'test-main.js'
+      'testk.html',
+      '*.js',
+      'vendor/*.js'
     ],
 
 
     // list of files to exclude
-    exclude: [
+    exclude: ['gulpfile.js'
     ],
 
 
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
+      'test.html': ['html2js']
     },
 
 
@@ -62,7 +58,7 @@ module.exports = function(config) {
 
     // start these browsers
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
-    browsers: ['Chrome', 'Firefox', 'PhantomJS'],
+    browsers: ['Chrome', 'PhantomJS', 'Firefox'],
 
 
     // Continuous Integration mode
