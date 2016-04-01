@@ -4,6 +4,9 @@
   <meta charset="utf-8">
   <title>Test</title>
   <link rel="stylesheet" media="all" href="vendor/mocha.css">
+  <script type="text/javascript" src="assets/js/main.js"></script>
+  <script type="text/javascript" src="assets/js/medida.js" data-cover></script>
+  <script type="text/javascript" src="assets/js/temperatura.js" data-cover></script>
 </head>
 <body>
   <div id="mocha"></div>
@@ -14,9 +17,7 @@
   <script src="vendor/chai.js"></script>
   <script src="vendor/blanket.js"
           data-cover-adapter="vendor/mocha-blanket.js"></script>
-  <script type="text/javascript" src="assets/js/main.js"></script>
-  <script type="text/javascript" src="assets/js/medida.js" data-cover></script>
-  <script type="text/javascript" src="assets/js/temperatura.js" data-cover></script>
+
   <script>mocha.setup('bdd');</script>
   <script type="text/javascript" src="assets/js/test.js"></script>
   <script>mocha.run();</script>

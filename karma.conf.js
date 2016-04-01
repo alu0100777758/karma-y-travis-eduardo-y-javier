@@ -4,15 +4,22 @@
 module.exports = function(config) {
   config.set({
 
+    plugins: ['karma-ng-html2js-preprocessor','karma-mocha'],
+
+
+
     // base path that will be used to resolve all patterns (eg. files, exclude)
     basePath: '',
 
-
     // frameworks to use
     // available frameworks: https://npmjs.org/browse/keyword/karma-adapter
-    frameworks: ['mocha', 'requirejs'],
+    frameworks: ['mocha', 'chai','requirejs'],
 
-
+        client: {
+              mocha: {
+                ui: 'bdd'
+              }
+        },
     // list of files / patterns to load in the browser
     files: [
       'testk.html',
@@ -29,7 +36,7 @@ module.exports = function(config) {
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
-      'test.html': ['html2js']
+      'testk.html': ['html2js']
     },
 
 
