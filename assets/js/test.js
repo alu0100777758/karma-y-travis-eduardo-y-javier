@@ -8,7 +8,6 @@ describe("Conversor", function() {
     it("Cambio de c a k", function() {
       expect(Medida.convertir("32c to k")).to.equal("305.15 Kelvin");
     });
-
     it("Prueba fallo", function() {
       expect(Medida.convertir("32")).to.equal("Introduzca una temperatura valida: 330e-1 F to C");
     });

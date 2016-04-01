@@ -1,42 +1,36 @@
 // Karma configuration
-// Generated on Thu Mar 31 2016 16:08:46 GMT-0700 (PDT)
+// Generated on Thu Mar 31 2016 17:47:32 GMT-0700 (PDT)
 
 module.exports = function(config) {
   config.set({
 
-    plugins: ['karma-ng-html2js-preprocessor','karma-mocha'],
-
-
-
     // base path that will be used to resolve all patterns (eg. files, exclude)
     basePath: '',
 
+
     // frameworks to use
     // available frameworks: https://npmjs.org/browse/keyword/karma-adapter
-    frameworks: ['mocha', 'chai','requirejs'],
+    frameworks: ['mocha', 'requirejs'],
 
-        client: {
-              mocha: {
-                ui: 'bdd'
-              }
-        },
+
     // list of files / patterns to load in the browser
     files: [
-      'testk.html',
-      '*.js',
-      'vendor/*.js'
+      'test-main.js',
+      {pattern: 'testk.html', included: false},
+      {pattern: '*.js', included: false},
+      {pattern: 'vendor/*.js', included: false}
     ],
 
 
     // list of files to exclude
-    exclude: ['gulpfile.js'
+    exclude: [
+      'gulpfile.js'
     ],
 
 
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
-      'testk.html': ['html2js']
     },
 
 
